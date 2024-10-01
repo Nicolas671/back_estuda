@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas - Biologia</title>
+    <link rel="stylesheet" href="/css/pag_bio.css">
+    <script>
+        function verificarResposta() {
+            const opcoes = document.querySelectorAll('input[name="cor"]');
+            let respostaSelecionada = false;
+            let respostaCorreta = 'vermelho'; // Definir a resposta correta aqui
+
+            opcoes.forEach(opcao => {
+                if (opcao.checked && opcao.value === respostaCorreta) {
+                    respostaSelecionada = true;
+                    localStorage.setItem('biologia', 'correto');
+                    alert('Resposta correta!');
+                } else if (opcao.checked) {
+                    respostaSelecionada = true;
+                    localStorage.setItem('biologia', 'incorreto');
+                    alert('Resposta incorreta.');
+                }
+            });
+
+            if (!respostaSelecionada) {
+                alert('Por favor, selecione uma resposta.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="titulo_circulo"><a href="/perguntas.html">ESTUD.ai</a></h1>
+        </div>
+    </header>
+    <main>
+        <div class="card_pergunta">
+            <img src="/imagem/img-pag_pergunta.png" alt="">
+            <p>Avaliação de substâncias genotóxicas 
+                O ensaio de micronúcleos é um teste de avaliação de genotoxicidade que associa a presença de micronúcleos (pequenos núcleos que aparecem próximo aos núcleos das células) com lesões genéticas. Os micronúcleos são fragmentos de DNA encapsulados, provenientes do fuso mitótico durante a divisão celular. DIAS, V. M. Micronúcleos em células tumorais: biologia e implicações para a tumorigênese. Dissertação de Mestrado. USP, 2006 (adaptado). 
+                Os micronúcleos se originam dos(as)</p>
+        </div>
+
+        <form>
+            <div class="radio-group">
+                <input type="radio" id="cor1" name="cor" value="vermelho">
+                <label for="cor1">cromossomos.</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="cor2" name="cor" value="azul">
+                <label for="cor2">mitocôndrias</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="cor3" name="cor" value="verde">
+                <label for="cor3">lisossomos</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="cor4" name="cor" value="amarelo">
+                <label for="cor4">nucléolos</label>
+            </div>
+        </form>
+
+        <div class="container_btn">
+            <button class="btn_voltar"><a href="/perguntas/pag_resul.html">Voltar</a></button>
+            <button class="btn_enviar" onclick="verificarResposta()">Verificar</button>
+        </div>
+    </main>
+</body>
+</html>

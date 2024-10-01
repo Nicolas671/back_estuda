@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Login</title>
+    <link rel="stylesheet" href="/css/cadastro-login.css">
+</head>
+<body>
+    <main>
+        <div class="parte-esq">
+            <div class="logo">
+                <h1 class="titulo_circulo">ESTUD.ai</h1>
+            </div>
+
+            <div class="container-login">
+                <h2 class="titulo-login" id="login">Login</h2>
+                <div class="email-login">
+                    <label for="login-email">Email:</label>
+                    <input type="text" id="login-email" placeholder="Coloque seu email">
+                </div>
+                <div class="senha-login">
+                    <label for="login-senha">Senha:</label>
+                    <input type="password" id="login-senha" placeholder="Coloque sua senha">
+                </div>
+                <div class="container-btn_login">
+                    <button class="btn-login" id="login-button">Login</button>
+                </div>
+                <div id="loginError" style="display: none; color: red;">
+                    Erro ao fazer login
+                </div>
+            </div>
+        </div>
+        
+        <div class="parte-dir">
+            <div class="titulo-cad">
+                <h2>Cadastro</h2>
+            </div>
+            <form class="container-cad" id="registerForm">
+                <div class="nome-cad">
+                    <label for="cad-nome" id="nome">Nome:</label>
+                    <input type="text" id="cad-nome" placeholder="Insira seu nome">
+                </div>
+                <div class="nascimento-cad">
+                    <label for="cad-data-nascimento" id="data-nascimento">Data de nascimento:</label>
+                    <input type="date" id="cad-data-nascimento">
+                    <span id="dateError" style="display:none; color:red;">Data de nascimento inválida ou futura</span>
+                </div>
+                <div class="email-cad">
+                    <label for="cad-email" id="email">Email ou celular:</label>
+                    <input type="text" id="cad-email" placeholder="Coloque seu email ou telefone">
+                </div>
+                <div class="senha-cad">
+                    <label for="cad-senha" id="senha">Senha:</label>
+                    <input type="password" id="cad-senha" placeholder="Insira uma senha">
+                </div>
+                <div class="senha-cad">
+                    <label for="cad-confirmar-senha" id="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="cad-confirmar-senha" placeholder="Confirme sua senha">
+                </div>
+                <div class="container-btn_cad">
+                    <button type="submit" class="btn-cad">Cadastrar</button>
+                </div>
+                <div id="successMessage" style="display: none; color: green;">
+                    Cadastro feito com Sucesso!
+                </div>
+            </form>
+        </div>
+    </main>
+   
+    <script src="/script.js/cadastro.js"></script>
+</body>
+</html>

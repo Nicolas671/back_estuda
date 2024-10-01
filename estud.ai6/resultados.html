@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados do Quiz</title>
+    <link rel="stylesheet" href="/css/resultados.css">
+    <script>
+      // Ler os resultados do localStorage e exibir na página
+      document.getElementById('matematica').innerText = localStorage.getItem('matematica') === 'correto' ? 'Correto' : 'Incorreto';
+      document.getElementById('historia').innerText = localStorage.getItem('historia') === 'correto' ? 'Correto' : 'Incorreto';
+      document.getElementById('fisica').innerText = localStorage.getItem('fisica') === 'correto' ? 'Correto' : 'Incorreto';
+      document.getElementById('portugues').innerText = localStorage.getItem('portugues') === 'correto' ? 'Correto' : 'Incorreto';
+      document.getElementById('ingles').innerText = localStorage.getItem('ingles') === 'correto' ? 'Correto' : 'Incorreto';
+      document.getElementById('educacaoFisica').innerText = localStorage.getItem('educacaoFisica') === 'correto' ? 'Correto' : 'Incorreto';
+      document.getElementById('quimica').innerText = localStorage.getItem('quimica') === 'correto' ? 'Correto' : 'Incorreto';
+      document.getElementById('biologia').innerText = localStorage.getItem('biologia') === 'correto' ? 'Correto' : 'Incorreto';
+  </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="titulo_circulo"><a href="/perguntas.html">ESTUD.ai</a></h1>
+        </div>
+    </header>
+    <main>
+        <h2>Resultados do Quiz</h2>
+        
+        <section class="resultado">
+            <h3>Matemática</h3>
+            <p id="matematica">Aguardando resultado...</p>
+        </section>
+        
+        <section class="resultado">
+            <h3>História</h3>
+            <p id="historia">Aguardando resultado...</p>
+        </section>
+        
+        <section class="resultado">
+            <h3>Física</h3>
+            <p id="fisica">Aguardando resultado...</p>
+        </section>
+        
+        <section class="resultado">
+            <h3>Língua Portuguesa</h3>
+            <p id="portugues">Aguardando resultado...</p>
+        </section>
+        
+        <section class="resultado">
+            <h3>Inglês</h3>
+            <p id="ingles">Aguardando resultado...</p>
+        </section>
+        
+        <section class="resultado">
+            <h3>Educação Física</h3>
+            <p id="educacaoFisica">Aguardando resultado...</p>
+        </section>
+        
+        <section class="resultado">
+            <h3>Química</h3>
+            <p id="quimica">Aguardando resultado...</p>
+        </section>
+        
+        <section class="resultado">
+            <h3>Biologia</h3>
+            <p id="biologia">Aguardando resultado...</p>
+        </section>
+
+        <div class="container_btn">
+            <button class="btn_voltar"><a href="/perguntas.html">Voltar</a></button>
+        </div>
+    </main>
+</body>
+</html>
+

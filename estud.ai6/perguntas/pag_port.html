@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas - Língua Portuguesa</title>
+    <link rel="stylesheet" href="/css/pag_port.css">
+    <script>
+        function verificarResposta() {
+            const opcoes = document.querySelectorAll('input[name="cor"]');
+            let respostaSelecionada = false;
+            let respostaCorreta = 'verde'; // Definir a resposta correta aqui
+
+            opcoes.forEach(opcao => {
+                if (opcao.checked && opcao.value === respostaCorreta) {
+                    respostaSelecionada = true;
+                    localStorage.setItem('portugues', 'correto');
+                    alert('Resposta correta!');
+                } else if (opcao.checked) {
+                    respostaSelecionada = true;
+                    localStorage.setItem('portugues', 'incorreto');
+                    alert('Resposta incorreta.');
+                }
+            });
+
+            if (!respostaSelecionada) {
+                alert('Por favor, selecione uma resposta.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="titulo_circulo"><a href="/perguntas.html">ESTUD.ai</a></h1>
+        </div>
+    </header>
+    <main>
+        <div class="card_pergunta">
+            <img src="/imagem/img-pag_pergunta.png" alt="">
+            <p>Um grupo de pesquisadores da Universidade Federal do Ceará desenvolveu um dicionário para traduzir sintomas de doenças da linguagem popular para os termos médicos. Defruço, chanha e piloura, por exemplo, podem ser termos conhecidos para muitos, mas, durante uma consulta médica, o desconhecimento pode significar um diagnóstico errado. “Isso é um registro histórico e pode ser muito útil para estudos dessas comunidades, na abordagem médica delas. É de certa forma pioneiro no Brasil e, sem dúvida, um instrumento de trabalho importante, porque a comunicação é fundamental na relação médico-paciente”, avalia o reitor da instituição.
+                <br> <br>Ao registrarem usos regionais de termos da área médica, pesquisadores </p>
+        </div>
+
+        <form>
+            <div class="radio-group">
+                <input type="radio" id="cor1" name="cor" value="vermelho">
+                <label for="cor1">apontaram erros motivados pelo desconhecimento da variedade linguística local.</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="cor2" name="cor" value="azul">
+                <label for="cor2">explicaram problemas provocados pela incapacidade de comunicação.</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="cor3" name="cor" value="verde">
+                <label for="cor3">descobriram novos sintomas de doenças existentes na comunidade</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="cor4" name="cor" value="amarelo">
+                <label for="cor4">propiciaram melhor compreensão dos sintomas dos pacientes. E divulgaram um novo rol de doenças características da localidade.
+                </label>
+            </div>
+        </form>
+    
+        <div class="container_btn">
+            <button class="btn_voltar"><a href="/perguntas/pag_ing.html">Voltar</a></button>
+            <button class="btn_enviar"><a href="/perguntas/pag_mat.html">Próxima</a></button>
+        </div>
+    </main>
+</body>
+</html>
