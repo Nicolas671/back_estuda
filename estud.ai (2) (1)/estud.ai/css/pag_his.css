@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    overflow-y: hidden;
+    padding: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    position: relative;
+    top: 50px;
+}
+
+.logo{
+    background:#73B78E;
+    margin-bottom: 15px;
+    padding: 10px 9px 10px 9px;
+    border-radius: 43px;
+    position: static;
+    width: 80px;
+    cursor: pointer;
+    margin-left: -130px;
+    transition: color 2s;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+    transition: color 2s;
+}
+
+.logo a:hover{
+    color: #547e65;
+}
+
+h1{
+    background-color: white;
+    border-radius: 30px;
+    font-size: 45px;
+    color: black;
+    transition: color 2s;
+}
+
+h1:hover{
+    color: #547e65;
+}
+
+/* MAIN */
+
+main{
+    background-color: #39B6A0;
+    height: 85vh;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+form{
+    margin: 50px 0px 0px 15px;
+}
+
+.card_pergunta{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card_pergunta p{
+    margin-left: 100px;
+    font-size: 25px;
+}
+
+.radio-group {
+    margin-bottom: 15px;
+}
+.radio-group label {
+    margin-left: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+.container_btn{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_enviar{
+    padding: 20px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 2s, color 2s, width 2s;
+}
+
+.btn_enviar:hover{
+    background-color: #5fffe2;
+    width: 200px;
+}
+
+.btn_enviar a{
+    color: #39B6A0;
+    text-decoration: none;
+}
+
+.btn_enviar a:hover{
+    color: white;
+}
+
+.btn_voltar{
+    padding: 20px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: white;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 2s, color 2s, width 2s;
+}
+
+.btn_voltar:hover{
+    background-color: #5fffe2;
+    width: 200px;
+}
+
+.btn_voltar a{
+    color: #39B6A0;
+    text-decoration: none;
+}
+
+.btn_voltar a:hover{
+    color: white;
+}

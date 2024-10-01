@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.logo{
+    background:#73B78E;
+    margin-bottom: 15px;
+    padding: 10px 9px 10px 9px;
+    border-radius: 43px;
+    position: static;
+    width: 80px;
+    cursor: pointer;
+    margin-left: -130px;
+    transition: color 2s;
+}
+
+.logo a{
+    text-decoration: none;
+    color: black;
+    transition: color 2s;
+}
+
+.logo a:hover{
+    color: #547e65;
+}
+
+h1{
+    background-color: white;
+    border-radius: 30px;
+    font-size: 45px;
+    color: black;
+}
+
+/* CARD PRINCIPAL */
+.card-principal{
+    width: 500px;
+    height: 370px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px 90px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 12;
+    background-color: white;
+    box-shadow: black 2px 2px 10px 0px;
+}
+
+.titulo_card{
+    font-family: "Vujahday Script", cursive;
+    font-weight: 500;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.subtitulo_card{
+    font-family: "Vujahday Script", cursive;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    color: yellow;
+}
+
+.texto_card{
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.card-principal img{
+    width: 200px;
+}
+
+/* CARDS */
+
+.card{
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: border-radius 1s, width 1.5s, font-size 1.5s, box-shadow 2s, border 0.5s;
+}
+
+.card a{
+    text-decoration: none;
+    color: white;
+}
+
+.card:hover{
+    border-radius: 30px;
+    width: 370px;
+    font-size: 23px;
+    border: outset black;
+    box-shadow: black 2px 2px 30px 2px;
+}
+
+
+.card.mat{
+    background-color: #f98702;
+    right: 550px;
+    border-top-left-radius: 30px;
+}
+
+
+.card.fis{
+    background-color: #7A0CE8CC;
+    top: 50px;
+    right: 450px;
+}
+
+.card.bio{
+    background-color: #22FA1E;
+    right: 550px;
+    top: 90px;
+}
+
+.card.qui{
+    background-color: #83D718;
+    bottom: 60px;
+    right: 180px;
+}
+
+.card.edf{
+    background-color: #B249D7;
+    bottom: 210px;
+    left: 180px;
+}
+
+.card.his{
+    background-color: #39B6A0;
+    bottom: 360px;
+    left: 550px;
+}
+
+.card.ing{
+    background-color: #F214C1;
+    bottom: 700px;
+    left: 450px;
+}
+
+.card.port{
+    background-color: #0B30F5;
+    bottom: 1050px;
+    left: 550px;
+}

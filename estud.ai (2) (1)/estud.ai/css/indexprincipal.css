@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.logo{
+    background:#73B78E;
+    padding: 6px;
+    border-radius: 40px;
+    position: static;
+    width: 70px;
+    height: 63px;
+}
+
+h1{
+    background-color: white;
+    border-radius: 30px;
+    font-size: 45px;
+}
+
+nav{
+    width: 700px;
+    display: grid;
+    grid-template-columns: 3;
+}
+
+nav .div-btn{
+    background-color: #23ffae;
+    border:solid 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    text-align: center;
+    border-radius: 20px;
+}
+
+nav .btn{
+    border-radius: 40px;
+    height: 43px;
+    background-color: #23ffae;
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: color 1.5s, background-color 2s, padding 1.5s;
+}
+
+.btn:hover{
+    color: white;
+    background-color: #613979;
+    height: 43px;
+    padding: 0px 2px 0px 2px;
+    border-radius: 20px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn a:hover{
+    color: white;
+}
+
+.user{
+    grid-column-start: 3;
+    grid-row-end:1;
+}
+
+.img-user{
+    width: 40px;
+    background-color: #73B78E;
+    border: 2px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: width 2s, border 0.5s, background-color 2s;
+}
+
+.img-user:hover{
+    border: 3px solid black;
+    background-color: #613979;
+}
+
+.parte-esq{
+    margin-top: 20px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.container-btn{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.container-btn.cima button{
+    margin: 7px;
+}
+
+.container-btn.baixo{
+    margin-top: 200px;
+}
+
+.container-btn button{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    border:none;
+    cursor: pointer;
+}
+
+.container-btn button img{
+    width: 50px;
+    background-color: white;
+}
+
+/* Começo do main */
+
+main{
+    background: linear-gradient(#B26ADF, #49609A, #613979);
+    margin-left: 270px;
+    height: 85vh;
+    margin-top: 30px;
+    position:static;
+    border-radius: 50px 0px 0px 0px;
+}
+
+.container-parte_esq{
+    display: grid;
+    column-gap: 250px;
+}
+
+.card.num1{
+    grid-column-start: 1;
+}
+
+.card.num2{
+    grid-column-start: 1;
+}
+
+.text-main{
+    grid-column-start: 1;
+}
+
+.card.num3{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.container-parte_esq h1{
+    background: none;
+    position: relative;
+    margin-top: 30px;
+    left: -100px;
+}
+
+.card-logo{
+    background-color: white;
+    margin: 100px;
+    padding: 100px;
+    padding-bottom: 150px;
+    padding-right: 270px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.card{
+    display: flex;
+    border: 3px solid black;
+    border-radius: 30px;
+    margin: 40px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 500px;
+    padding: 50px;
+    background-color: white;
+    position: relative;
+    right: 150px;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
+.card h2{
+    background-color: #79F5C8;
+    border-radius: 200px;
+    font-size: 35px;
+    padding: 45px 20px 45px 20px;
+    cursor: pointer;
+    transition: padding 1.5s, font-size 1s;
+}
+
+.card h2:hover{
+    background-color: #23ffae;
+    padding: 55px 30px 55px 30px;
+    font-size: 30px;
+}
+
+.card.num3 h2{
+    background-color:#D5ABF1;
+    border-radius: 200px;
+    font-size: 35px;
+    padding: 45px 20px 45px 20px;
+    cursor: pointer;
+    transition: padding 1.5s, font-size 1s;
+}
+
+.card.num3 h2:hover{
+    background-color: #c06ef6;
+    padding: 55px 30px 55px 30px;
+    font-size: 30px;
+}
+
+.parte-cima{
+    display: flex;
+}
+
+.img-1{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin-top: 20px;
+    width: 270px;
+}
